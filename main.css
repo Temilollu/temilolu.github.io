@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    height: 100%;
+    margin: 0;
+    /* max-width: 1370px;
+    margin: 1rem auto; */
+}
+
+#main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Serif Display';
+    color: hsl(270, 9%, 17%);
+
+}
+#main-header > svg{
+    margin-left: 10rem;
+}
+
+ul{
+    display: flex;
+}
+ li{
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0.8rem 1.4rem;
+    text-transform: uppercase;
+   color: hsl(273, 4%, 51%);
+}
+
+.ul-plans{
+    border: 1.5px solid black;
+}
+.ul-plans:hover{
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+}
+
+.a-plan{
+     padding: 0.8rem 1.4rem;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5rem  !important;
+    text-transform: uppercase;
+}
+.a-plan:hover{
+    color: hsl(256, 26%, 20%);
+    background-color: hsl(0, 0%, 98%);
+}
+.toggle-button{
+    display: none;
+}
+@media(max-width: 913px){
+   #main-header{
+        padding: 1rem;
+         padding-left: 0; /* i put this because of the toggle button*/
+   }
+
+    .shown-list{
+        display: none;
+    }
+    #main-header > svg{
+    margin: 1rem 0;
+}
+.toggle-button {
+    display: block;
+  width: 3rem;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  /* vertical-align: middle; */
+  order: 1;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+}
+
+.main-section{
+   background-color: hsl(256, 26%, 20%);
+
+}
+.main-section-div{
+width: 100%;
+color: white;
+padding: 2.5rem;
+ text-align: center;
+/* margin-right: 2rem; */
+}
+img{
+    width: 100%;
+    /* position: relative;
+    top: 40%;
+    order: 1; */
+}
+.svg-down{
+    /* position: absolute;
+    top: 420px; */
+    display: none;
+}
+.svg-up{
+   /*  position: absolute;
+   bottom: 87px;
+    right: 0;*/
+   display: none;
+}
+
+@media(min-width: 920px){
+.main-section{
+ height: 570px;
+    padding: 6rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: hsl(256, 26%, 20%);
+}
+img{
+position: relative;
+    top: 40%;
+    order: 1;
+    width: 540px;
+}
+.svg-down{
+    position: absolute;
+    top: 420px;
+
+}
+.svg-up{
+    position: absolute;
+   bottom: 87px;
+    right: 0;
+}
+.main-section-div{
+width: 40%;
+color: white;
+margin-right: 2rem;
+text-align: left;
+}
+}
+
+.second-section{
+    /* display: flex;
+    justify-content: space-evenly; */
+    /* margin: 0 10rem; */
+    text-align: center;
+    margin: 1.5rem;
+}
+/* .second-section div{
+    margin: 0 0.5rem;
+} */
+.h-one{
+    text-align: center;
+}
+
+
+@media(min-width: 920px){
+    .h-one{
+        margin-top: 20rem; margin-left: 10rem;
+        text-align: left;
+    }
+    .second-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10rem;
+    text-align: left;
+}
+.second-section div{
+    margin: 0 0.5rem;
+}
+}
+
+.more-section{
+    background-color: hsl(256, 26%, 20%);
+    height: 300px;
+    text-align: center;
+    padding: 2rem;
+   /*  margin: 1rem 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; */
+
+}
+.more-section > h1{
+    font-size: 35px;
+}
+.more-section a{
+    padding: 0.8rem 1.4rem;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+}
+.more-section a:hover{
+    color: hsl(256, 26%, 20%);
+    background-color: hsl(0, 0%, 98%);
+}
+@media(min-width: 920px){
+    .more-section{
+        margin: 1rem 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    }
+}
+
+
+.social-media--icons{
+    display: flex;
+    /* margin: 2rem 10rem; */
+    justify-content: space-between;
+}
+.div-icons{
+    display: flex;
+}
+.div-icons svg{
+   margin: 0 0.5rem;
+}
+
+
+
+.footer{
+    /* display: flex;
+    margin: 2rem 10rem;
+    justify-content: space-between; */
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem;
+    /* background-color: hsl(216, 30%, 68%)  */
+}
+
+.footer div{
+    margin: 2rem;
+}
+.footer-div{
+font-weight: bold;
+}
+
+.overall{
+    background-color: rgba(127, 255, 212, 0.102);
+    padding: 2rem;
+}
+.attribution { font-size: 20px; text-align: center; }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+        }
+
+
+        @media(min-width: 920px){
+    .social-media--icons{
+     margin: 2rem 10rem;
+    }
+
+.footer{
+    display: flex;
+    margin: 2rem 10rem;
+    justify-content: space-between;
+}
+
+}
+#toggle-bar{
+    display: none ;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+#close-toggle{
+    margin: 1rem 7rem;
+    padding: 0.7rem;
+    background: rgba(255, 0, 0, 0.596);
+    border-radius: 50px;
+    border-style: none;
+}
